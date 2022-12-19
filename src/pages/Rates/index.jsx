@@ -3,13 +3,46 @@ import React from 'react'
 function Rates() {
     return (
         <>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-base-200" style={{ backgroundImage: `url("./img/bg2.png")` }}>
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <div className="text-center lg:text-left glasscard p-6 mx-8">
+                        <div className="carousel w-full ">
+                            <div id="slide1" className="carousel-item relative w-full">
+                                <img src="https://placeimg.com/400/200/arch" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide4" className="btn btn-circle">❮</a>
+                                    <a href="#slide2" className="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide2" className="carousel-item relative w-full">
+                                <img src="https://placeimg.com/400/200/arch" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide1" className="btn btn-circle">❮</a>
+                                    <a href="#slide3" className="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide3" className="carousel-item relative w-full">
+                                <img src="https://placeimg.com/400/200/arch" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide2" className="btn btn-circle">❮</a>
+                                    <a href="#slide4" className="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide4" className="carousel-item relative w-full">
+                                <img src="https://placeimg.com/800/200/arch" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide3" className="btn btn-circle">❮</a>
+                                    <a href="#slide1" className="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='text-center p-6'>
+                            <button className="btn btn-outline  ">Mint now!</button>
+
+                            <p className="">More</p>
+                        </div>
                     </div>
-                    <div className="card  glasscard flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card  glasscard flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 text-black">
                         <div className="card-body">
                             <table className="table-fixed ">
                                 <thead>
